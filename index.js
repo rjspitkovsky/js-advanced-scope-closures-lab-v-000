@@ -1,7 +1,7 @@
-function produceDrivingRange(drivingRange) {
+function produceDrivingRange(blockRange) {
   return function(startBlock, endBlock) {
     let range = Math.abs(startBlock - endBlock)
-    if (range < drivingRange) {
+    if (range < blockRange) {
       return `within range by ${range}`
     } else {
       return `${range} blocks out of range`
